@@ -132,12 +132,34 @@ table {
 html {
   font-size: 62.5%;
 }
+html,
+body {
+  font-family: Raleway, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+p {
+  font-size: 1.5rem;
+}
+li {
+  font-size: 1.5rem;
+}
 img {
   width: 200px;
   height: 200px;
 }
 .container {
-  max-width: 953.328px;
+  max-width: 1200px;
   width: 94%;
   margin: 0 auto;
   background-color: lightcoral;
@@ -175,6 +197,12 @@ footer .inner .contact {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+footer .inner .contact .forms .field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .sectionOne .inner {
   display: flex;
