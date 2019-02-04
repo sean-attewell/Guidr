@@ -1,0 +1,41 @@
+.sectionOne {
+    .inner {
+        .flex-mixin(column, space-between, flex-start);
+    }
+}
+
+.sectionTwo {
+    .inner {
+        .twoGuide {
+            .flex-mixin(row, space-between, center);
+            .content {
+                .flex-mixin(column, space-between, flex-end);
+            }
+        }
+        .twoDoor {
+            .flex-mixin(row, space-between, center);
+            .content {
+                .flex-mixin(column, space-between, flex-start);
+            }
+        }
+        .twoCamera {
+            .flex-mixin(row, space-between, center);
+            .content {
+                .flex-mixin(column, space-between, flex-end);
+            }
+        }
+    }
+}
+
+.sectionThree {
+    .inner {
+        // .flex-mixin(column, space-between, flex-start);
+        .articlesOne {
+            .flex-mixin(row, space-between, center);
+        }
+        .articlesTwo {
+            .flex-mixin(row, space-between, center);
+        }
+    }
+}
+

@@ -136,11 +136,18 @@ img {
   width: 200px;
   height: 200px;
 }
+.container {
+  max-width: 953.328px;
+  width: 94%;
+  margin: 0 auto;
+  background-color: lightcoral;
+}
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 nav .inner {
   display: flex;
@@ -153,4 +160,73 @@ nav .inner .burger div {
   height: 5px;
   background-color: black;
   margin: 6px 0;
+}
+.menu {
+  display: none;
+}
+footer .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .inner .contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sectionOne .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sectionTwo .inner .twoGuide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sectionTwo .inner .twoGuide .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.sectionTwo .inner .twoDoor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sectionTwo .inner .twoDoor .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sectionTwo .inner .twoCamera {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sectionTwo .inner .twoCamera .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.sectionThree .inner .articlesOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sectionThree .inner .articlesTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
