@@ -312,7 +312,7 @@ footer .inner .contact .details {
   filter: blur(5px);
 }
 .sectionOne {
-  padding-top: 200px;
+  padding-top: 150px;
   margin-bottom: 100px;
 }
 .sectionOne .inner {
@@ -321,10 +321,14 @@ footer .inner .contact .details {
   justify-content: space-between;
   align-items: flex-start;
 }
-.sectionOne .inner h1 {
-  border-bottom: 1px solid black;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+.sectionOne .inner img {
+  width: 60%;
+}
+.sectionOne .inner p {
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  padding-left: 10px;
 }
 .sectionTwo .inner .twoGuide {
   margin-bottom: 50px;
