@@ -214,6 +214,7 @@ nav {
   color: white;
   font-size: 2rem;
   font-weight: bold;
+  z-index: 2;
 }
 nav a {
   margin-left: 3%;
@@ -229,14 +230,14 @@ nav .inner h2::after {
   content: '';
   padding-right: 2vw;
 }
+nav .inner .burger {
+  cursor: pointer;
+}
 nav .inner .burger div {
   width: 35px;
   height: 5px;
   background-color: white;
   margin: 6px 0;
-}
-.menu {
-  display: none;
 }
 footer {
   padding-top: 30px;
@@ -306,6 +307,9 @@ footer .inner .contact .details {
   footer .inner .contact .forms {
     width: 97%;
   }
+}
+.footer-blur {
+  filter: blur(5px);
 }
 .sectionOne {
   padding-top: 200px;
@@ -443,6 +447,9 @@ footer .inner .contact .details {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+.container-blur {
+  filter: blur(5px);
+}
 @media (max-width: 500px) {
   .sectionOne .inner .content {
     width: 100%;
@@ -499,4 +506,22 @@ footer .inner .contact .details {
   article:first-child {
     margin-bottom: 50px;
   }
+}
+.menu {
+  display: none;
+  z-index: 2;
+  background: #707d72;
+  height: 50vh;
+  width: 50vw;
+  border-radius: 10px;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid white;
+}
+.menu-appear {
+  display: block;
 }
