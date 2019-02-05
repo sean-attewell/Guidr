@@ -129,3 +129,63 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
+
+@media @mobile {
+    .sectionOne {
+        .inner {
+            .content {
+                width: 100%;
+                // text-align: center;
+            }
+        }
+    }
+}
+
+@media @mobile {
+    .sectionTwo {
+        .inner {
+            .twoGuide {
+                .flex-mixin(column-reverse, space-between, flex-end);
+                img {
+                    margin-bottom: 30px;
+                }
+            }
+            .twoDoor {
+                .flex-mixin(column, space-between, flex-start);
+                img {
+                    margin-bottom: 30px;
+                }
+            }
+            .twoCamera {
+                .flex-mixin(column-reverse, space-between, flex-end);
+                img {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media @mobile {
+    .sectionThree {
+        .inner {
+            .articlesOne {
+                .flex-mixin(column, space-between, center);
+                article {
+                    width: 100%;
+                }
+            }
+            .articlesTwo {
+                .flex-mixin(column, space-between, center);
+                article {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    // Select and style every article element that is the first child of its parent
+    article:first-child {
+        margin-bottom: 50px;
+    }
+}

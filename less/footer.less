@@ -12,7 +12,6 @@ footer {
       padding-bottom: 20px;
     }
     .contact {
-      .flex-mixin(row, flex-start, center);
       .forms {
         width: 35%;
         .field {
@@ -24,10 +23,12 @@ footer {
           input {
             width: 100%;
             margin-bottom: 10px;
+            border-radius: 5px;
             }
           textarea {
             width: 100%;
             margin-bottom: 30px;
+            border-radius: 5px;
           }
         }
       }
@@ -64,3 +65,17 @@ footer {
   }
 }
 
+@media @mobile {
+  footer {
+    .inner {
+      h2 {
+        width: 97%;
+      }
+      .contact {
+        .forms {
+          width: 97%;
+        }
+      }
+    }
+  }
+}

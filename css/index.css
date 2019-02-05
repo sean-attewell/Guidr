@@ -141,6 +141,11 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+@media (max-width: 500px) {
+  body {
+    background-size: auto;
+  }
+}
 h1 {
   font-size: 3.2rem;
   font-weight: bold;
@@ -246,12 +251,6 @@ footer .inner h2 {
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
-footer .inner .contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
 footer .inner .contact .forms {
   width: 35%;
 }
@@ -268,10 +267,12 @@ footer .inner .contact .forms .field label {
 footer .inner .contact .forms .field input {
   width: 100%;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 footer .inner .contact .forms .field textarea {
   width: 100%;
   margin-bottom: 30px;
+  border-radius: 5px;
 }
 footer .inner .contact .details {
   padding-left: 50px;
@@ -297,6 +298,14 @@ footer .inner .contact .details {
 }
 .copyright a {
   color: white;
+}
+@media (max-width: 500px) {
+  footer .inner h2 {
+    width: 97%;
+  }
+  footer .inner .contact .forms {
+    width: 97%;
+  }
 }
 .sectionOne {
   padding-top: 200px;
@@ -433,4 +442,61 @@ footer .inner .contact .details {
   height: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+@media (max-width: 500px) {
+  .sectionOne .inner .content {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .sectionTwo .inner .twoGuide {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .sectionTwo .inner .twoGuide img {
+    margin-bottom: 30px;
+  }
+  .sectionTwo .inner .twoDoor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .sectionTwo .inner .twoDoor img {
+    margin-bottom: 30px;
+  }
+  .sectionTwo .inner .twoCamera {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .sectionTwo .inner .twoCamera img {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .sectionThree .inner .articlesOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sectionThree .inner .articlesOne article {
+    width: 100%;
+  }
+  .sectionThree .inner .articlesTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sectionThree .inner .articlesTwo article {
+    width: 100%;
+  }
+  article:first-child {
+    margin-bottom: 50px;
+  }
 }
