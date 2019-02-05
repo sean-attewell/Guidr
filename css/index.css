@@ -177,6 +177,11 @@ a {
   border-radius: 5px;
   padding: 1.5%;
 }
+.learnMoreTop:hover {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+}
 .learnMoreBottom {
   font-size: 1.8rem;
   font-weight: bold;
@@ -185,6 +190,11 @@ a {
   border: 1px solid white;
   border-radius: 5px;
   padding: 1.5%;
+}
+.learnMoreBottom:hover {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
 }
 nav {
   display: flex;
@@ -223,23 +233,70 @@ nav .inner .burger div {
 .menu {
   display: none;
 }
-footer .inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+footer {
+  padding-top: 30px;
+  padding-left: 3%;
+  background-color: #2e3141;
+  opacity: 0.9;
+  color: white;
+}
+footer .inner h2 {
+  border-bottom: 1px solid white;
+  width: 35%;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 footer .inner .contact {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+}
+footer .inner .contact .forms {
+  width: 35%;
 }
 footer .inner .contact .forms .field {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+}
+footer .inner .contact .forms .field label {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+footer .inner .contact .forms .field input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+footer .inner .contact .forms .field textarea {
+  width: 100%;
+  margin-bottom: 30px;
+}
+footer .inner .contact .details {
+  padding-left: 50px;
+}
+.sendMessage {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1.5%;
+}
+.sendMessage:hover {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+.copyright {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.copyright a {
+  color: white;
 }
 .sectionOne {
   padding-top: 200px;
