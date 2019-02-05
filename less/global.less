@@ -17,7 +17,10 @@
   }
   
 body {
-  background-image: url(/images/mountains.jpg);
+  background-image: url(../images/mountains.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  // background-size: contain;
 }
 
   h1 {
@@ -44,13 +47,14 @@ body {
     font-size: 1.5rem;    
   }
 
-  img {
-      width: 200px;
-      height: 200px;
+  a {
+    text-decoration: none;
+    color: white;
   }
+
 
   .container {
     .container-width-mixin(1200px; 94%);
-    background-color: lightcoral;
+    // background-color: lightcoral;
   }
 
