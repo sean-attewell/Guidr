@@ -136,6 +136,9 @@ html,
 body {
   font-family: Raleway, Helvetica, sans-serif;
 }
+body {
+  background-image: url(/images/mountains.jpg);
+}
 h1 {
   font-size: 3.2rem;
   font-weight: bold;
