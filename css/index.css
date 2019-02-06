@@ -184,7 +184,7 @@ a {
 }
 .learnMoreTop:hover {
   border: 1px solid white;
-  background-color: black;
+  background-color: #404741;
   color: white;
 }
 .learnMoreBottom {
@@ -198,7 +198,7 @@ a {
 }
 .learnMoreBottom:hover {
   border: 1px solid black;
-  background-color: white;
+  background-color: #E5DCD3;
   color: black;
 }
 nav {
@@ -444,6 +444,46 @@ footer .inner .contact .details {
 }
 .sectionThree .inner .articlesTwo article .articleContent p {
   padding-bottom: 30px;
+}
+.sectionFour {
+  margin-bottom: 50px;
+}
+.sectionFour .inner .tales {
+  padding-top: 30px;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.sectionFour .inner .talesParagraph {
+  padding-bottom: 30px;
+}
+.sectionFour .inner .reviewContainer .notebookImage {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.sectionFour .inner .reviewContainer .tabs .tabMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sectionFour .inner .reviewContainer .tabs .tabMenu .hear {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.sectionFour .inner .reviewContainer .tabs .tabMenu div {
+  width: 33%;
+}
+.sectionFour .inner .reviewContainer .tabs .tabMenu div:hover {
+  cursor: pointer;
+}
+.sectionFour .inner .reviewContainer .content .review .reviewScore {
+  padding-top: 20px;
+}
+.sectionFour .inner .reviewContainer .content .review .reviewSig {
+  padding-top: 10px;
+  font-style: italic;
 }
 .articleImage {
   width: 100%;
