@@ -198,8 +198,8 @@ a {
 }
 .learnMoreBottom:hover {
   border: 1px solid black;
-  background-color: #E5DCD3;
-  color: blacktr;
+  background-color: #F6D4B9;
+  color: black;
 }
 nav {
   display: flex;
@@ -457,10 +457,22 @@ footer .inner .contact .details {
 .sectionFour .inner .talesParagraph {
   padding-bottom: 30px;
 }
-.sectionFour .inner .reviewContainer .notebookImage {
-  width: 100%;
+.sectionFour .inner .reviewContainer {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-image: url(../images/notebook.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.sectionFour .inner .reviewContainer .notebookImage {
+  width: 100%;
+  border-radius: 20px;
+  opacity: 0.2;
+}
+.sectionFour .inner .reviewContainer .tabs {
+  padding: 0 2%;
 }
 .sectionFour .inner .reviewContainer .tabs .tabMenu {
   display: flex;
@@ -472,11 +484,34 @@ footer .inner .contact .details {
   font-size: 2rem;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .sectionFour .inner .reviewContainer .tabs .tabMenu .hear {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 420px) {
+  .sectionFour .inner .reviewContainer .tabs .tabMenu .hear {
+    font-size: 1.5rem;
+  }
+}
 .sectionFour .inner .reviewContainer .tabs .tabMenu div {
   width: 33%;
 }
+@media (max-width: 500px) {
+  .sectionFour .inner .reviewContainer .tabs .tabMenu div {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 420px) {
+  .sectionFour .inner .reviewContainer .tabs .tabMenu div {
+    font-size: 1.5rem;
+  }
+}
 .sectionFour .inner .reviewContainer .tabs .tabMenu div:hover {
   cursor: pointer;
+}
+.sectionFour .inner .reviewContainer .content {
+  padding: 10px 2%;
 }
 .sectionFour .inner .reviewContainer .content .review {
   display: none;
@@ -489,10 +524,15 @@ footer .inner .contact .details {
   font-style: italic;
 }
 .articleImage {
+  transition: 0.5s;
   width: 100%;
   height: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+.articleImage:hover {
+  transition: 0.5s;
+  filter: contrast(150%);
 }
 .container-blur {
   transition: 0.5s;
