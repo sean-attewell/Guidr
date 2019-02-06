@@ -1,31 +1,58 @@
 .sectionOne {
+    padding-top: 150px;
+    margin-bottom: 100px;
     .inner {
         .flex-mixin(column, space-between, flex-start);
+        img {
+                width: 60%;
+                // opacity: 0.5;
+        }
+        p {
+            font-style: italic;
+            // font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            padding-left: 10px;
+        }
     }
 }
 
 .sectionTwo {
     .inner {
         .twoGuide {
+            margin-bottom: 50px;
             .flex-mixin(row, space-between, center);
             }
             .content {
                 .flex-mixin(column, space-between, flex-end);
+                h2 {
+                    border-bottom: 1px solid black;
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+                }
             }
         }
         .twoDoor {
+            margin-bottom: 50px;
             .flex-mixin(row, space-between, center);
             .content {
                 .flex-mixin(column, space-between, flex-start);
             }
         }
         .twoCamera {
+            margin-bottom: 50px;
             .flex-mixin(row, space-between, center);
             .content {
                 .flex-mixin(column, space-between, flex-end);
             }
         }
 }
+
+// .sectionTwo::before {
+//     content: "asdasdasds";
+//     height: 200px;
+//     background-color: aquamarine;
+// }
 
 
 .circle {
@@ -36,21 +63,140 @@
     border-radius: 50%;
 }
 
+.circle.right {
+    margin-left: 5%;
+}
+
+.circle.left {
+    margin-right: 5%;
+}
 
 .sectionThree {
     .inner {
-        // .flex-mixin(column, space-between, flex-start);
+        h2 {
+            border-bottom: 1px solid black;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
         .articlesOne {
+            margin-top: 50px;
             .flex-mixin(row, space-between, center);
+            article {
+                width: 48%;
+                background-color: @article-background;
+                color: white;
+                border-radius: 20px;
+                .articleContent {
+                    padding: 0 8%;
+                    margin-bottom: 30px;
+                    h3 {
+                        padding-top: 20px;
+                        border-bottom: 1px solid white;
+                        padding-bottom: 20px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        padding-bottom: 30px;
+                    }
+                }
+            }
         }
         .articlesTwo {
+            margin-top: 50px;
+            margin-bottom: 50px;
             .flex-mixin(row, space-between, center);
+            article {
+                width: 48%;
+                background-color: @article-background;
+                color: white;
+                border-radius: 20px;
+                .articleContent {
+                    padding: 0 8%;
+                    margin-bottom: 30px;
+                    h3 {
+                        padding-top: 20px;
+                        border-bottom: 1px solid white;
+                        padding-bottom: 20px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        padding-bottom: 30px;
+                    }
+                }
+            }
         }
     }
 }
 
 .articleImage {
-    max-width: 450.66px;
+    // max-width: 450.66px;
     width: 100%;
     height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.container-blur {
+    filter: blur(5px);
+    
+}
+
+@media @mobile {
+    .sectionOne {
+        .inner {
+            .content {
+                width: 100%;
+                // text-align: center;
+            }
+        }
+    }
+}
+
+@media @mobile {
+    .sectionTwo {
+        .inner {
+            .twoGuide {
+                .flex-mixin(column-reverse, space-between, flex-end);
+                img {
+                    margin-bottom: 30px;
+                }
+            }
+            .twoDoor {
+                .flex-mixin(column, space-between, flex-start);
+                img {
+                    margin-bottom: 30px;
+                }
+            }
+            .twoCamera {
+                .flex-mixin(column-reverse, space-between, flex-end);
+                img {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media @mobile {
+    .sectionThree {
+        .inner {
+            .articlesOne {
+                .flex-mixin(column, space-between, center);
+                article {
+                    width: 100%;
+                }
+            }
+            .articlesTwo {
+                .flex-mixin(column, space-between, center);
+                article {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    // Select and style every article element that is the first child of its parent
+    article:first-child {
+        margin-bottom: 50px;
+    }
 }

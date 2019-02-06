@@ -16,6 +16,16 @@
     // color: @main-font-color;
   }
   
+body {
+  background-image: url(../images/mountains.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  // background-size: contain;
+  @media @mobile {
+    background-size: auto;
+  }
+}
+
   h1 {
     font-size: 3.2rem;
     font-weight: bold;
@@ -40,13 +50,45 @@
     font-size: 1.5rem;    
   }
 
-  img {
-      width: 200px;
-      height: 200px;
+  a {
+    text-decoration: none;
   }
+
 
   .container {
-    .container-width-mixin(1200px; 94%);
-    background-color: lightcoral;
+    .container-width-mixin(950px; 90%);
+    // background-color: lightcoral;
   }
 
+  .learnMoreTop {
+    margin: 20px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1.5%;
+  }
+  
+  .learnMoreTop:hover {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+  }        
+  .learnMoreBottom {
+    // margin: 20px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 1.5%;
+  }
+
+  .learnMoreBottom:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+  }        
