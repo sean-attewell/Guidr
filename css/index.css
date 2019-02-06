@@ -478,6 +478,9 @@ footer .inner .contact .details {
 .sectionFour .inner .reviewContainer .tabs .tabMenu div:hover {
   cursor: pointer;
 }
+.sectionFour .inner .reviewContainer .content .review {
+  display: none;
+}
 .sectionFour .inner .reviewContainer .content .review .reviewScore {
   padding-top: 20px;
 }

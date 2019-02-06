@@ -1,4 +1,4 @@
-// console.log('Sannity check')
+// console.log('Sanity check')
 
 // toggleMenu is a variable storing what the arrow function returns
 
