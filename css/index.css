@@ -641,6 +641,14 @@ footer .inner .contact .details {
     width: 0px;
   }
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .menu {
   display: none;
   animation-name: slideIn;
@@ -666,6 +674,8 @@ footer .inner .contact .details {
   padding-bottom: 20px;
   margin-left: 92%;
   cursor: pointer;
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 @media (max-width: 500px) {
   .menu .closeMenu {
@@ -684,6 +694,8 @@ footer .inner .contact .details {
   padding-bottom: 10px;
   border-bottom: 1px solid white;
   margin-bottom: 40px;
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 .menu .inner .links {
   width: 90%;
@@ -706,6 +718,8 @@ footer .inner .contact .details {
   margin: 10px 0;
   width: 100%;
   text-align: center;
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 .menu .inner .links li a:hover {
   border: 1px solid black;

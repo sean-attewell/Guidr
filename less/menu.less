@@ -8,11 +8,15 @@
     100% {width: 0px;}
 }
 
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
 
 .menu {
     display: none;
     animation-name: slideIn;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     z-index: 2;
     background: lighten(@article-background, 20%);
     height: 450px;
@@ -25,9 +29,6 @@
     bottom: 0;
     right: 0;
     border: 2px solid white;
-    // @media @mobileHeight {
-    //     height: 66vh;
-    // }
     .closeMenu {
         width: 30px;
         color: white;
@@ -36,28 +37,28 @@
         padding-bottom: 20px;
         margin-left: 92%;
         cursor: pointer;
+        animation-name: fadeIn;
+        animation-duration: 1s;
         @media @mobile {
             margin-left: 89%;
         }
     }
     .inner {
-        // animation-name: slideIn;
-        // animation-duration: .5s;
         .flex-mixin(column, space-between, center);
-        // height: 100%;
         h1 {
             color: white;
             text-align: center;
             padding-bottom: 10px;
             border-bottom: 1px solid white;
             margin-bottom: 40px;
+            animation-name: fadeIn;
+            animation-duration: 1s;
         }
         .links {
             width: 90%;
             // height: 80%;
             li {
                 .flex-mixin(column, space-between, center);
-                
                 a {
                     font-style: none;
                     font-size: 1.8rem;
@@ -70,6 +71,8 @@
                     margin: 10px 0;
                     width: 100%;
                     text-align: center;
+                    animation-name: fadeIn;
+                    animation-duration: 1s;
                 &:hover {
                     border: 1px solid black;
                     background-color: white;
