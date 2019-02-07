@@ -35,6 +35,9 @@ class TabLink {
         // add the 'active-tab' class to the current tab
         this.tabElement.classList.add('active-tab');
 
+        // this.tabElement.style = "background-color:#404741";
+        // this.tabElement.style = "border:1px solid white";
+
         // takes this.reviews array from the constructor
         // and for each review (which is an instantiation of a class)
         // runs the selectReview method to make it display
