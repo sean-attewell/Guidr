@@ -178,6 +178,14 @@ a {
   width: 90%;
   margin: 0 auto;
 }
+@keyframes fadeInButton {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .learnMoreTop {
   margin: 20px 0;
   font-size: 1.8rem;
@@ -192,6 +200,8 @@ a {
   border: 1px solid white;
   background-color: #404741;
   color: white;
+  animation-name: fadeInButton;
+  animation-duration: 1.5s;
 }
 .learnMoreBottom {
   font-size: 1.8rem;
@@ -204,8 +214,10 @@ a {
 }
 .learnMoreBottom:hover {
   border: 1px solid black;
-  background-color: #F6DBD1;
+  background-color: #F8F0EE;
   color: black;
+  animation-name: fadeInButton;
+  animation-duration: 1.5s;
 }
 nav {
   display: flex;
@@ -719,7 +731,7 @@ footer .inner .contact .details {
   width: 100%;
   text-align: center;
   animation-name: fadeIn;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
 }
 .menu .inner .links li a:hover {
   border: 1px solid black;
