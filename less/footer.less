@@ -7,13 +7,13 @@ footer {
   .inner {
     h2 {
       border-bottom: 1px solid white;
-      width: 35%;
+      width: 40%;
       margin-bottom: 20px;
       padding-bottom: 20px;
     }
     .contact {
       .forms {
-        width: 35%;
+        width: 40%;
         .field {
           .flex-mixin(column, space-between, flex-start);
           label {
@@ -62,6 +62,22 @@ footer {
   text-align: center;
   a {
     color: white;
+  }
+}
+
+
+@media @tablet {
+  footer {
+    .inner {
+      h2 {
+        width: 75%;
+      }
+      .contact {
+        .forms {
+          width: 75%;
+        }
+      }
+    }
   }
 }
 

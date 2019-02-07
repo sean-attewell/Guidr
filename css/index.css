@@ -217,6 +217,11 @@ nav {
   font-weight: bold;
   z-index: 2;
 }
+@media (max-width: 500px) {
+  nav {
+    font-size: 1.7rem;
+  }
+}
 nav a {
   margin-left: 3%;
   color: white;
@@ -230,6 +235,11 @@ nav .inner {
 nav .inner h2::after {
   content: '';
   padding-right: 2vw;
+}
+@media (max-width: 500px) {
+  nav .inner h2 {
+    font-size: 1.7rem;
+  }
 }
 nav .inner .burger {
   cursor: pointer;
@@ -249,12 +259,12 @@ footer {
 }
 footer .inner h2 {
   border-bottom: 1px solid white;
-  width: 35%;
+  width: 40%;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 footer .inner .contact .forms {
-  width: 35%;
+  width: 40%;
 }
 footer .inner .contact .forms .field {
   display: flex;
@@ -300,6 +310,14 @@ footer .inner .contact .details {
 }
 .copyright a {
   color: white;
+}
+@media (max-width: 800px) {
+  footer .inner h2 {
+    width: 75%;
+  }
+  footer .inner .contact .forms {
+    width: 75%;
+  }
 }
 @media (max-width: 500px) {
   footer .inner h2 {
@@ -463,7 +481,7 @@ footer .inner .contact .details {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-image: url(../images/notebook.jpg);
+  background-image: url(../images/notebook-light.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -517,7 +535,7 @@ footer .inner .contact .details {
   cursor: pointer;
 }
 .sectionFour .inner .reviewContainer .content {
-  padding: 10px 2%;
+  padding: 0px 2%;
 }
 .sectionFour .inner .reviewContainer .content .review {
   display: none;
@@ -527,6 +545,7 @@ footer .inner .contact .details {
 }
 .sectionFour .inner .reviewContainer .content .review .reviewSig {
   padding-top: 10px;
+  padding-bottom: 15px;
   font-style: italic;
 }
 .articleImage {
