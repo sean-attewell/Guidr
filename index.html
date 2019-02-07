@@ -8,7 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
-    <script src="js/index.js" async></script>
+    <script src="js/menu.js" async></script> <!-- menu button -->
+    <script src="js/reviews.js" async></script> <!-- review buttons -->
 </head>
 
 <body>
@@ -24,7 +25,7 @@
                     <div></div>
                     <div></div>
                 </div>
-            </div>
+            </div> <!-- inner div -->
         </nav>
     </header>
 
@@ -34,7 +35,7 @@
         <div class="inner">
             <h1>Menu</h1>
             <ul class="links">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Generic</a></li>
                 <li><a href="#">Elements</a></li>
                 <li><a href="#">Log In</a></li>
@@ -131,7 +132,63 @@
             </div> <!-- inner -->
         </section> <!-- sectionThree -->
 
-        
+        <section class="sectionFour">
+            <div class="inner">
+                <h2 class="tales">Tales of roads less traveled...</h2>
+                <p class="talesParagraph">Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+                
+                <div class="reviewContainer">
+
+                    <!-- <img class="notebookImage" src="images/notebook.jpg" alt="notebook"> -->
+                    
+                    <!-- Choose which reviews to see -->
+                    <div class="tabs">
+                        <div class="tabMenu">
+                            <h2 class="hear">Hear from our:</h2>
+                            <div class="learnMoreTop tab active-tab" data-tab="guide">GUIDES</div>
+                            <div class="learnMoreTop tab" data-tab="explorer">EXPLORERS</div>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        
+                        <!-- review components -->
+                        <div class="review" data-tab="guide">
+                            <h3 class="reviewScore">4/5</h3>
+                            <p class="reviewContent">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            <p class="reviewSig">Mr Bloggs</p>
+                        </div>
+
+                        <div class="review" data-tab="explorer">
+                            <h3 class="reviewScore">5/5</h3>
+                            <p class="reviewContent">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            <p class="reviewSig">Mrs Smith</p>
+                        </div>
+
+                        <div class="review" data-tab="explorer">
+                            <h3 class="reviewScore">4/5</h3>
+                            <p class="reviewContent">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            <p class="reviewSig">Ms Jones</p>
+                        </div>
+
+                        <div class="review" data-tab="guide">
+                            <h3 class="reviewScore">5/5</h3>
+                            <p class="reviewContent">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            <p class="reviewSig">Miss Evans</p>
+                        </div>
+
+                        <div class="review" data-tab="explorer">
+                            <h3 class="reviewScore">4/5</h3>
+                            <p class="reviewContent">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            <p class="reviewSig">Mr Alan</p>
+                        </div>
+
+                    </div> <!-- content -->
+
+                </div> <!-- reviewContainer -->
+            </div> <!-- inner -->
+        </section> <!-- sectionFour -->
+
     </div> <!-- container -->
     
     <footer class="footer">

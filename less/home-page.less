@@ -128,18 +128,92 @@
     }
 }
 
+.sectionFour {
+    margin-bottom: 50px;
+    .inner {
+        .tales {
+            padding-top: 30px;
+            border-bottom: 1px solid black;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .talesParagraph {
+            padding-bottom: 30px;
+        }
+        .reviewContainer {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-image: url(../images/notebook.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            .notebookImage {
+                width: 100%;
+                border-radius: 20px;
+                opacity: 0.2;
+            }
+            .tabs {
+                padding: 0 2%;
+                .tabMenu {
+                    .flex-mixin(row, space-between, center);
+                    .hear {
+                        font-size: 2.0rem;
+                        font-weight: bold;
+                        @media @mobile {
+                            font-size: 1.7rem;
+                        }
+                        @media @smallMobile {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    div {
+                        width: 33%;
+                        @media @mobile {
+                            font-size: 1.7rem;
+                        }
+                        @media @smallMobile {
+                            font-size: 1.5rem;
+                        }
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    }
+                }
+            }
+            .content {
+                padding: 10px 2%;
+                .review {
+                    display: none;
+                    .reviewScore {
+                        padding-top: 20px;
+                    }
+                    .reviewSig {
+                        padding-top: 10px;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .articleImage {
-    // max-width: 450.66px;
+    transition: 0.5s;
     width: 100%;
     height: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+&:hover {
+    transition: 0.5s;
+    filter: contrast(150%);
+}
 }
 
 
 .container-blur {
+    transition: 0.5s;
     filter: blur(5px);
-    
 }
 
 @media @mobile {
