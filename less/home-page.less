@@ -145,7 +145,7 @@
             border-top-right-radius: 20px;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
-            background-image: url(../images/notebook.jpg);
+            background-image: url(../images/notebook-light.jpg);
             background-attachment: fixed;
             background-size: cover;
             .notebookImage {
@@ -157,6 +157,11 @@
                 padding: 0 2%;
                 .tabMenu {
                     .flex-mixin(row, space-between, center);
+                    .active-tab {
+                        border: 1px solid white;
+                        background-color: @article-background;
+                        color: white;
+                    }
                     .hear {
                         font-size: 2.0rem;
                         font-weight: bold;
@@ -182,14 +187,18 @@
                 }
             }
             .content {
-                padding: 10px 2%;
+                padding: 0px 2%;
                 .review {
                     display: none;
+                // &:last-child {
+                //     padding-bottom: 10px;
+                // }
                     .reviewScore {
                         padding-top: 20px;
                     }
                     .reviewSig {
                         padding-top: 10px;
+                        padding-bottom: 15px;
                         font-style: italic;
                     }
                 }

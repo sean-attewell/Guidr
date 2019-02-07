@@ -136,13 +136,18 @@ html,
 body {
   font-family: Raleway, Helvetica, sans-serif;
 }
-body {
-  background-image: url(../images/mountains.jpg);
-  background-attachment: fixed;
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(../images/mountains.jpg);
   background-size: cover;
 }
 @media (max-width: 500px) {
-  body {
+  body:before {
     background-size: auto;
   }
 }
@@ -168,9 +173,18 @@ a {
   text-decoration: none;
 }
 .container {
+  transition: 0.5s;
   max-width: 950px;
   width: 90%;
   margin: 0 auto;
+}
+@keyframes fadeInButton {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .learnMoreTop {
   margin: 20px 0;
@@ -186,6 +200,8 @@ a {
   border: 1px solid white;
   background-color: #404741;
   color: white;
+  animation-name: fadeInButton;
+  animation-duration: 1.5s;
 }
 .learnMoreBottom {
   font-size: 1.8rem;
@@ -198,8 +214,10 @@ a {
 }
 .learnMoreBottom:hover {
   border: 1px solid black;
-  background-color: #F6D4B9;
+  background-color: #F8F0EE;
   color: black;
+  animation-name: fadeInButton;
+  animation-duration: 1.5s;
 }
 nav {
   display: flex;
@@ -216,6 +234,11 @@ nav {
   font-weight: bold;
   z-index: 2;
 }
+@media (max-width: 500px) {
+  nav {
+    font-size: 1.7rem;
+  }
+}
 nav a {
   margin-left: 3%;
   color: white;
@@ -229,6 +252,11 @@ nav .inner {
 nav .inner h2::after {
   content: '';
   padding-right: 2vw;
+}
+@media (max-width: 500px) {
+  nav .inner h2 {
+    font-size: 1.7rem;
+  }
 }
 nav .inner .burger {
   cursor: pointer;
@@ -248,12 +276,12 @@ footer {
 }
 footer .inner h2 {
   border-bottom: 1px solid white;
-  width: 35%;
+  width: 40%;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 footer .inner .contact .forms {
-  width: 35%;
+  width: 40%;
 }
 footer .inner .contact .forms .field {
   display: flex;
@@ -299,6 +327,14 @@ footer .inner .contact .details {
 }
 .copyright a {
   color: white;
+}
+@media (max-width: 800px) {
+  footer .inner h2 {
+    width: 75%;
+  }
+  footer .inner .contact .forms {
+    width: 75%;
+  }
 }
 @media (max-width: 500px) {
   footer .inner h2 {
@@ -462,7 +498,7 @@ footer .inner .contact .details {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-image: url(../images/notebook.jpg);
+  background-image: url(../images/notebook-light.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -479,6 +515,11 @@ footer .inner .contact .details {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.sectionFour .inner .reviewContainer .tabs .tabMenu .active-tab {
+  border: 1px solid white;
+  background-color: #404741;
+  color: white;
 }
 .sectionFour .inner .reviewContainer .tabs .tabMenu .hear {
   font-size: 2rem;
@@ -511,7 +552,7 @@ footer .inner .contact .details {
   cursor: pointer;
 }
 .sectionFour .inner .reviewContainer .content {
-  padding: 10px 2%;
+  padding: 0px 2%;
 }
 .sectionFour .inner .reviewContainer .content .review {
   display: none;
@@ -521,6 +562,7 @@ footer .inner .contact .details {
 }
 .sectionFour .inner .reviewContainer .content .review .reviewSig {
   padding-top: 10px;
+  padding-bottom: 15px;
   font-style: italic;
 }
 .articleImage {
@@ -603,13 +645,29 @@ footer .inner .contact .details {
     width: 50vw;
   }
 }
+@keyframes slideOut {
+  0% {
+    width: 50vw;
+  }
+  100% {
+    width: 0px;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .menu {
   display: none;
   animation-name: slideIn;
   animation-duration: 0.5s;
   z-index: 2;
   background: #707d72;
-  height: 52vh;
+  height: 450px;
   width: 50vw;
   border-radius: 10px;
   position: fixed;
@@ -628,6 +686,8 @@ footer .inner .contact .details {
   padding-bottom: 20px;
   margin-left: 92%;
   cursor: pointer;
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 @media (max-width: 500px) {
   .menu .closeMenu {
@@ -646,10 +706,11 @@ footer .inner .contact .details {
   padding-bottom: 10px;
   border-bottom: 1px solid white;
   margin-bottom: 40px;
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 .menu .inner .links {
   width: 90%;
-  height: 80%;
 }
 .menu .inner .links li {
   display: flex;
@@ -668,6 +729,9 @@ footer .inner .contact .details {
   padding: 10px;
   margin: 10px 0;
   width: 100%;
+  text-align: center;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
 }
 .menu .inner .links li a:hover {
   border: 1px solid black;
@@ -675,6 +739,5 @@ footer .inner .contact .details {
   color: black;
 }
 .menu-appear {
-  transition: 0.5s;
   display: block;
 }

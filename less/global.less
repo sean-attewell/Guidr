@@ -16,11 +16,26 @@
     // color: @main-font-color;
   }
   
-body {
-  background-image: url(../images/mountains.jpg);
-  background-attachment: fixed;
+// body {
+//   background-image: url(../images/mountains.jpg);
+//   background-attachment: fixed;
+//   background-size: cover;
+//   // background-size: contain;
+//   @media @mobile {
+//     background-attachment: fixed;
+//     background-size: auto;
+//   }
+// }
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(../images/mountains.jpg);
   background-size: cover;
-  // background-size: contain;
   @media @mobile {
     background-size: auto;
   }
@@ -56,9 +71,15 @@ body {
 
 
   .container {
+    transition: 0.5s;
     .container-width-mixin(950px; 90%);
     // background-color: lightcoral;
   }
+
+  @keyframes fadeInButton {
+    0% {opacity: 0.3;}
+    100% {opacity: 1;}
+}
 
   .learnMoreTop {
     margin: 20px 0;
@@ -75,6 +96,8 @@ body {
     border: 1px solid white;
     background-color: @article-background;
     color: white;
+    animation-name: fadeInButton;
+    animation-duration: 1.5s;
   }        
   .learnMoreBottom {
     // margin: 20px 0;
@@ -89,6 +112,8 @@ body {
 
   .learnMoreBottom:hover {
     border: 1px solid black;
-    background-color: @light-nav;
+    background-color: #F8F0EE;
     color: black;
+    animation-name: fadeInButton;
+    animation-duration: 1.5s;
   }        
