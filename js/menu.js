@@ -1,11 +1,9 @@
-// console.log('Sanity check')
-
-// toggleMenu is a variable storing what the arrow function returns
+console.log('Sanity check')
 
 const toggleMenu = () => {
-    menu.classList.toggle('menu-appear');
-    container.classList.toggle('container-blur');
-    footer.classList.toggle('footer-blur');
+  menu.classList.toggle('menu-appear');
+  container.classList.toggle('container-blur');
+  footer.classList.toggle('footer-blur');
 }
 
 
@@ -19,5 +17,3 @@ const footer = document.querySelector('.footer');
 
 menuButton.addEventListener('click', toggleMenu);
 closeMenu.addEventListener('click', toggleMenu);
-// toggleMenu is a variable storing what the arrow function returns
-// so don't try and invoke it because it's not a function
